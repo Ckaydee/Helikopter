@@ -23,7 +23,12 @@ function runGame() {
 
   // Draw
   drawGame();
-  distance++;
+  if ((distanceMultiplier = 1)) {
+    distance++;
+  }
+  if (distanceMultiplier > 1) {
+    distance *= distanceMultiplier;
+  }
 }
 
 function moveHeli() {
@@ -68,12 +73,11 @@ function moveWalls() {
     wall3.y = Math.random() * 300 + 100;
   }
 
-  if (distance == 500) {
-    wallspeed += -5.5;
+  if (distance > 0 && distance % 1000 == 0) {
+    wallspeed += -5;
+    distanceMultiplier += 5;
   }
-  if (distance == 2000) {
-    wallspeed += -7;
-  }
+  console.log(wallspeed);
 }
 // console.log(distance);
 function checkCollisions() {
