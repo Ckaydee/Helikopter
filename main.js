@@ -19,6 +19,7 @@ propeller.src = "sound/propeller.wav";
 let mouseIsPressed = false;
 
 let distance = 0;
+let distanceMultiplier = 3;
 
 let best = 0;
 
