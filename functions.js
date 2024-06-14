@@ -74,8 +74,8 @@ function moveWalls() {
   }
 
   if (distance > 0 && distance % 1000 == 0) {
-    wallspeed += -5;
-    distanceMultiplier += 5;
+    wallspeed += -2;
+    distanceMultiplier += 2;
   }
   console.log(wallspeed);
 }
