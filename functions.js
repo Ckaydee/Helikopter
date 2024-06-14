@@ -44,10 +44,10 @@ function moveHeli() {
   heli.y += heli.speed;
 
   //   constrain speed
-  if (heli.speed > 5) {
-    heli.speed = 5;
-  } else if (heli.speed < -5) {
-    heli.speed = -5;
+  if (heli.speed > 3) {
+    heli.speed = 3;
+  } else if (heli.speed < -3) {
+    heli.speed = -3;
   }
 }
 
